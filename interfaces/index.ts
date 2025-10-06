@@ -1,24 +1,22 @@
-export interface CardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  price: number;
+export interface Address {
+  state: string;
+  city: string;
+  country: string;
 }
 
-export interface ButtonProps {
-  text: string;
-  onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
-  variant?: 'primary' | 'secondary' | 'danger';
+export interface Offers {
+  bed: string;
+  shower: string;
+  occupants: string;
 }
 
-// Additional interfaces can be added here as the project grows
-export interface Listing {
-  id: string;
-  title: string;
-  description: string;
-  price: number;
-  imageUrl: string;
-  location: string;
+export interface PropertyProps {
+  name: string;
+  address: Address;
   rating: number;
+  category: string[];
+  price: number;
+  offers: Offers;
+  image: string;
+  discount: string;
 }
