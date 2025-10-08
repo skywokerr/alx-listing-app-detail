@@ -20,3 +20,18 @@ export interface PropertyProps {
   image: string;
   discount: string;
 }
+
+export interface Review {
+  id: number;
+  name: string;
+  avatar: string;
+  rating: number;
+  date: string;
+  comment: string;
+}
+
+export interface BookingFormData {
+  checkIn: string;
+  checkOut: string;
+  guests: number;
+}
